@@ -1,0 +1,28 @@
+{
+  "name": "tienda-pc",
+  "version": "1.0.0",
+  "description": "<h1>Project preview</h1>\r <h3>Productos</h3>\r <img src=\"assets/preview1.jpg\">\r <hr>\r <h3>Carrito</h3>\r <img src=\"assets/preview2.jpg\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiyelmini/Proyecto-coderhouse-JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/santiyelmini/Proyecto-coderhouse-JS/issues"
+  },
+  "homepage": "https://github.com/santiyelmini/Proyecto-coderhouse-JS#readme"
+}

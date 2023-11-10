@@ -1,0 +1,102 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$azul: #435585;
+$celeste: #818FB4;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    aside {
+        padding: 30px;
+        background-color: $celeste;
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .buscar-tema {
+                display: flex;
+                justify-content: center;
+                .contenedor-buscar-input {
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 20px;
+                    background-color: #fff;
+                    width: 600px;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                    .buscar-input {
+                        padding: 20px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        border-radius: 20px;
+                        font-size: 15px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    .buscar-boton {
+                        border: none;
+                        outline: none;
+                        border-radius: 0px 20px 20px 0px;
+                        padding: 15px;
+                        color: #fff;
+                        cursor: pointer;
+                        background-color: $azul;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .bx-search-alt-2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        background-color: $azul;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .temas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .tema {
+                background-color: #fff;
+                text-decoration: none;
+                color: $azul;
+                border-radius: 20px;
+                padding: 5px;
+                width: 350px;
+                margin: 25px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                transition: transform 200ms;
+                @media(max-width: 768px) {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                &:hover {
+                    transform: scale(1.03);
+                }
+                .tema-nombre {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

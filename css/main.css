@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+  height: 100vh; }
+  body aside {
+    padding: 30px;
+    background-color: #818FB4; }
+    body aside .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body aside .nav .buscar-tema {
+        display: flex;
+        justify-content: center; }
+        body aside .nav .buscar-tema .contenedor-buscar-input {
+          display: flex;
+          justify-content: center;
+          border-radius: 20px;
+          background-color: #fff;
+          width: 600px; }
+          @media (max-width: 768px) {
+            body aside .nav .buscar-tema .contenedor-buscar-input {
+              width: 100%; } }
+          body aside .nav .buscar-tema .contenedor-buscar-input .buscar-input {
+            padding: 20px;
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif; }
+          body aside .nav .buscar-tema .contenedor-buscar-input .buscar-boton {
+            border: none;
+            outline: none;
+            border-radius: 0px 20px 20px 0px;
+            padding: 15px;
+            color: #fff;
+            cursor: pointer;
+            background-color: #435585;
+            display: flex;
+            align-items: center; }
+          body aside .nav .buscar-tema .contenedor-buscar-input .bx-search-alt-2 {
+            font-size: 20px; }
+  body main {
+    background-color: #435585;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main .temas-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      body main .temas-container .tema {
+        background-color: #fff;
+        text-decoration: none;
+        color: #435585;
+        border-radius: 20px;
+        padding: 5px;
+        width: 350px;
+        margin: 25px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        transition: transform 200ms; }
+        @media (max-width: 768px) {
+          body main .temas-container .tema {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px; } }
+        body main .temas-container .tema:hover {
+          transform: scale(1.03); }
+        body main .temas-container .tema .tema-nombre {
+          font-size: 17px; }
